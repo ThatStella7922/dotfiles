@@ -1,5 +1,5 @@
 ###### ThatStella7922's trash bullshit zshrc ######
-# 2023.0625.0
+# 2023.0918.0
 
 myname=$(id -F)
 
@@ -64,7 +64,7 @@ if [[ ! -e ~/.zshrcbrewupdated ]]; then
     #file doesn't exist
     echo "This zshrc uses a file named .zshrcbrewupdated to determine when to update\nHomebrew packages."
     echo "This file doesn't exist yet so it will be created now, and a complete Homebrew\nupdate + upgrade will be run as well."
-    date +%d > .zshrcbrewupdated
+    date +%d > ~/.zshrcbrewupdated
     echo
     brew update
     brew upgrade
